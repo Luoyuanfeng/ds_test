@@ -37,6 +37,32 @@ public class Test {
 //
 //        Hashtable<String, Integer> ht = new Hashtable<>();
 
-        System.out.println(Arrays.toString(E.values()));
+//        System.out.println(Arrays.toString(E.values()));
+
+//        DoubleStackQueue<Integer> dsq = new DoubleStackQueue<>();
+//        dsq.enq(1);
+//        dsq.enq(2);
+//        dsq.enq(3);
+//        System.out.println(dsq.deq());
+//        System.out.println(dsq.deq());
+//        dsq.enq(4);
+//        System.out.println(dsq.deq());
+//        dsq.enq(5);
+//        System.out.println(dsq.size());
+
+        DoubleQueueStack<Integer> dqs = new DoubleQueueStack<>();
+        dqs.push(1);
+        dqs.push(2);
+        System.out.println(dqs.pop());
+        System.out.println(dqs.pop());
+        System.out.println(dqs.pop());
+        dqs.push(6);
+        dqs.push(3);
+        dqs.push(4);
+        dqs.push(5);
+        System.out.println(dqs.pop());
+        System.out.println(dqs.pop());
+        System.out.println(dqs.pop());
+
     }
 }
